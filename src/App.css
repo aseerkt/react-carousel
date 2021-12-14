@@ -1,0 +1,43 @@
+:root {
+  --navbar-height: 60px;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 35px;
+  pointer-events: none;
+}
+
+.App-main {
+  position: relative;
+  height: calc(100vh - var(--navbar-height));
+  width: 100vw;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
